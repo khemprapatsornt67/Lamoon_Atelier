@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamoon Atelier | Home Decor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">Lamoon <span>Atelier</span></a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="cart-btn" onclick="showCart()">
+      🛒 <span id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="eyebrow">A GENTLE TOUCH OF HOME</p>
+        <h1>Make Your Space<br><em>Feel Like Home.</em></h1>
+        <p class="hero-description">
+          ของตกแต่งบ้านที่ผสานความเรียบง่าย ความอบอุ่น
+          และความใส่ใจในทุกชีวิตภายในบ้าน
+        </p>
+        <a href="#shop" class="shop-btn">Explore Collection →</a>
+      </div>
+
+      <div class="hero-image">
+        <div class="image-card">
+          <span>HOME</span>
+          <p>soft living<br>beautiful moments</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro" id="about">
+      <p class="eyebrow">OUR PHILOSOPHY</p>
+      <h2>ความงามที่อยู่ร่วมกับ<br>ทุกชีวิตในบ้าน</h2>
+      <p>
+        Lamoon Atelier คัดสรรของตกแต่งบ้านที่เติมเต็มบรรยากาศ
+        ให้บ้านน่าอยู่ พร้อมใส่ใจในความปลอดภัยและความอ่อนโยน
+        เพื่อให้ทุกคน รวมถึงสัตว์เลี้ยงตัวโปรด อยู่ร่วมกันได้อย่างมีความสุข
+      </p>
+    </section>
+
+    <section class="products" id="shop">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CURATED FOR YOUR HOME</p>
+          <h2>Our Collection</h2>
+        </div>
+        <a href="#">View All →</a>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image vase">
+            <span>01</span>
+          </div>
+          <p class="product-category">HOME DECOR</p>
+          <h3>Soft Form Vase</h3>
+          <p class="price">฿890</p>
+          <button onclick="addToCart('Soft Form Vase', 890)">
+            Add to Cart
+          </button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image lamp">
+            <span>02</span>
+          </div>
+          <p class="product-category">LIGHTING</p>
+          <h3>Warm Glow Lamp</h3>
+          <p class="price">฿1,590</p>
+          <button onclick="addToCart('Warm Glow Lamp', 1590)">
+            Add to Cart
+          </button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image cushion">
+            <span>03</span>
+          </div>
+          <p class="product-category">TEXTILE</p>
+          <h3>Calm Linen Cushion</h3>
+          <p class="price">฿690</p>
+          <button onclick="addToCart('Calm Linen Cushion', 690)">
+            Add to Cart
+          </button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-logo">Lamoon Atelier</div>
+    <p>Thoughtfully designed for a softer home.</p>
+    <p class="copyright">© 2026 Lamoon Atelier. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
